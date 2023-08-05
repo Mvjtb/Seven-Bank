@@ -20,6 +20,10 @@ body {
     font-weight: bold;
 }
 
+.title img {
+    vertical-align: middle;
+}
+
 /* Estilos para resaltar la palabra "Bank" */
 .highlight {
     color: #FF873D;
@@ -41,6 +45,14 @@ body {
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
 }
+.large-btn img {
+    display: inline-block; /* Hace que la imagen sea un elemento en línea */
+    vertical-align: middle; /* Centra verticalmente la imagen */
+    margin-right: 5px; /* Espacio entre el icono y el texto */
+    width: 23px;
+}
+
+
 
 .large-btn:hover {
     background-color: #FF873D;
@@ -63,9 +75,9 @@ body {
 .menu-item {
     padding: 5px 0;
     color: white;
-    font-size: 16px; /* Tamaño de letra más grande */
-    cursor: pointer; /* Cambiar el cursor al pasar por encima */
-    transition: color 0.3s; /* Agregar una transición de color */
+    font-size: 30px; 
+    cursor: pointer; 
+    transition: color 0.3s; 
 }
 
 .menu-item:hover {
@@ -76,6 +88,7 @@ body {
 .show-menu {
     display: flex;
 }
+
 /* Estilos para la versión responsive */
 
 
@@ -87,7 +100,11 @@ body {
     }
 
     .title {
-        font-size: 60px;
+        font-size: 40px;
+    }
+
+    .title img {
+        font-size: 40px;
     }
 
     .buttons {
@@ -95,37 +112,27 @@ body {
         display: flex;
         flex-wrap: wrap; /* Permite que los botones se ajusten al ancho disponible */
         justify-content: center; /* Alinea los botones al centro horizontalmente */
-    }
-
-    .large-btn {
-        font-size: 14px;
-        padding: 8px 15px;
-        margin-right: 5px;
-        margin-bottom: 5px; /* Agrega un margen inferior para separar los botones */
-    }
+        flex-direction: column;
+    }      
 
     .menu {
         top: 100px;
-    }
-}
-
-/* Estilos para hacer que el menú sea responsive */
-
-@media screen and (max-width: 768px) {
-    .buttons {
-        flex-direction: column;
-    }
-
-    .large-btn {
-        margin: 5px 0;
-    }
-
-    .menu {
         top: 120px;
         right: 10px;
         width: 120px;
     }
-}
 
+    .large-btn {
+        flex-direction: column; /* Cambia la dirección del botón a columnas */
+        align-items: center; /* Centra horizontalmente el contenido */
+        margin: 5px 0;
+    }
+
+    .large-btn img {
+        margin-right: 0; /* Elimina el margen entre el icono y el texto */
+        margin-bottom: 5px; /* Agrega un margen inferior entre el icono y el texto */
+        width: 15px;
+    }
+}
 
 
