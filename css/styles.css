@@ -1,8 +1,10 @@
+/* Estilos para el cuerpo de la página */
 body {
     margin: 0;
     padding: 0;
 }
 
+/* Estilos para la barra superior */
 .top-bar {
     background-color: #2F3F56;
     color: white;
@@ -12,17 +14,21 @@ body {
     padding: 30px;
 }
 
+/* Estilos para el título */
 .title {
     font-size: 80px;
     font-weight: bold;
 }
 
+/* Estilos para resaltar la palabra "Bank" */
 .highlight {
     color: #FF873D;
 }
 
+/* Estilos para los botones "Registro", "Acceso" y "Menú" */
 .buttons {
     display: flex;
+    align-items: center;
 }
 
 .large-btn {
@@ -41,23 +47,85 @@ body {
     color: white;
 }
 
+/* Estilos para el menú desplegable */
 .menu {
     display: none;
     flex-direction: column;
     background-color: #2F3F56;
     position: absolute;
-    top: 120px; /* Posición ajustada para que se muestre debajo de la barra superior */
-    left: 0;
+    top: 120px;
+    right: 30px;
     padding: 10px;
-    width: 100%; /* Ocupar todo el ancho de la pantalla */
+    width: 150px;
+    z-index: 1;
 }
 
 .menu-item {
     padding: 5px 0;
-    color: white; /* Color del texto en el menú */
+    color: white;
+    font-size: 16px; /* Tamaño de letra más grande */
+    cursor: pointer; /* Cambiar el cursor al pasar por encima */
+    transition: color 0.3s; /* Agregar una transición de color */
 }
 
-#menu-btn:hover + .menu {
+.menu-item:hover {
+    color: #FF873D;
+}
+
+/* Estilos para mostrar el menú cuando se activa la clase "show-menu" */
+.show-menu {
     display: flex;
 }
+/* Estilos para la versión responsive */
+
+
+@media only screen and (max-width: 768px) {
+    .top-bar {
+        flex-direction: column;
+        align-items: center; /* Alinea los elementos al centro verticalmente */
+        padding: 15px;
+    }
+
+    .title {
+        font-size: 60px;
+    }
+
+    .buttons {
+        margin-top: 15px;
+        display: flex;
+        flex-wrap: wrap; /* Permite que los botones se ajusten al ancho disponible */
+        justify-content: center; /* Alinea los botones al centro horizontalmente */
+    }
+
+    .large-btn {
+        font-size: 14px;
+        padding: 8px 15px;
+        margin-right: 5px;
+        margin-bottom: 5px; /* Agrega un margen inferior para separar los botones */
+    }
+
+    .menu {
+        top: 100px;
+    }
+}
+
+/* Estilos para hacer que el menú sea responsive */
+
+@media screen and (max-width: 768px) {
+    .buttons {
+        flex-direction: column;
+    }
+
+    .large-btn {
+        margin: 5px 0;
+    }
+
+    .menu {
+        top: 120px;
+        right: 10px;
+        width: 120px;
+    }
+}
+
+
 
