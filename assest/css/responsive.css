@@ -57,13 +57,13 @@
 
     .menu-item {
         padding: 5px 10px;
-        font-size: 16px; /* Tamaño de la fuente en el menú */
+        font-size: 16px; 
     }
 
     .menu-item::before {
-        content: "\2022"; /* Agrega el punto para simular una lista */
+        content: "\2022"; 
         margin-right: 5px;
-        font-size: 20px; /* Tamaño del punto en el menú */
+        font-size: 20px; 
     }
 
     .large-btn img {
