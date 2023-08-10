@@ -69,4 +69,17 @@
     .large-btn img {
         width: 15px;
     }
+
+    .bottom-text {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .highlight-text {
+        width: 60%;
+        margin: 8px auto;
+        font-size: 20px;
+    }
 }
+
+

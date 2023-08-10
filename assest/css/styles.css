@@ -109,6 +109,21 @@ body {
     display: flex;
 }
 
+.bottom-text {
+    position: absolute;
+    bottom: 30px;
+    left: 45px;
+    width: 35%;
+    background-color: #FF873D;
+    padding: 65px;
+    text-align: center;
+}
+
+.highlight-text {
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    margin: 0;
+}
 
 
 
