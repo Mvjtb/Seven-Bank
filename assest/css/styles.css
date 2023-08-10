@@ -82,9 +82,9 @@ a.large-btn:hover {
 }
 
 .large-btn img {
-    display: inline-block; /* Hace que la imagen sea un elemento en línea */
-    vertical-align: middle; /* Centra verticalmente la imagen */
-    margin-right: 5px; /* Espacio entre el icono y el texto */
+    display: inline-block; 
+    vertical-align: middle; 
+    margin-right: 5px; 
     width: 23px;
 }
 
@@ -146,7 +146,7 @@ a.large-btn:hover {
 .login-background {
     margin: 0;
     padding: 0;
-    background-image: url("../image/fondo2.png"); /* Ruta a tu nueva imagen de fondo */
+    background-image: url("../image/fondo2.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
