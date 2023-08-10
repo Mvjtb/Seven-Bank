@@ -80,6 +80,15 @@
         margin: 8px auto;
         font-size: 20px;
     }
+
+    /* Estilos responsive para la página de inicio de sesión */
+    .login-container h2 {
+        font-size: 24px;
+    }
+    
+    .login-form {
+        max-width: 300px;
+    }
 }
 
 
