@@ -22,6 +22,21 @@ body {
     width: 500px;
 }
 
+a.large-btn {
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;    
+}
+
+a.large-btn:hover {
+    background-color: #FF873D;
+    color: white;
+}
 
 /* Estilos para la barra superior */
 .top-bar {
@@ -61,10 +76,11 @@ body {
     background-color: transparent;
     color: white;
     border: 2px solid white;
-    border-radius: 5px;
+    border-radius: 30px;
     cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.3s, color 0.3s;    
 }
+
 .large-btn img {
     display: inline-block; /* Hace que la imagen sea un elemento en línea */
     vertical-align: middle; /* Centra verticalmente la imagen */
@@ -124,6 +140,83 @@ body {
     color: rgb(0, 0, 0);
     margin: 0;
 }
+
+/* Estilos para la página de inicio de sesión */
+
+.login-background {
+    margin: 0;
+    padding: 0;
+    background-image: url("../image/fondo2.png"); /* Ruta a tu nueva imagen de fondo */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.login-container {
+    margin: auto;
+    text-align: center;
+    margin-top: 60px;
+    margin-left: 170px;
+    
+}
+
+.login-container h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    margin-left: -700px;
+}
+
+.login-form {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    width: 400px;
+    margin-top: 10px;
+}
+
+
+.login-form label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+}
+
+#login-btn {
+    background-color: #FF873D;
+    border-color: #FF873D;
+}
+
+#login-btn:hover {
+    background-color: #FF6C00;
+    border-color: #FF6C00;
+}
+
+/* Estilos para el enlace "¿Olvidaste o bloqueaste tu contraseña?" */
+.login-container a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff873d6e;
+    color: black; /* Cambia el color del texto a negro */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.login-container a:hover {
+    background-color: #ff6a00b0;
+}
+
 
 
 
