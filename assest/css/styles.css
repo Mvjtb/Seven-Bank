@@ -217,7 +217,100 @@ a.large-btn:hover {
     background-color: #ff6a00b0;
 }
 
+/* Estilos para la pagina de registro y crear cuenta*/
+/*fondo*/
 
+.register-background {
+    margin:0;
+    padding:0;
+    background-image: url("../image/fondo2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.register-titles{
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 100px;
+}
+
+.register-container {
+    text-align: center;
+    margin-top: 25px;
+    margin-left: 100px; 
+    width: 400px;  
+}
+
+/*para el formulario*/
+
+.register-form{
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    width: 400px;
+    margin-top: 3px;
+}
+
+.register-form label {
+    display: block;
+    margin-bottom: 2px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.register-form input {
+    width: 60%;
+    padding: 8px;
+    margin-bottom: 5px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+/*botones inferiores de registrar y cancelar*/
+
+#register-btn {
+    margin-top: 20px;
+    background-color: #FF873D;
+    border-color: #FF873D;
+}
+
+#register-btn:hover {
+    background-color: #FF6C00;
+    border-color: #FF6C00;
+}
+
+#cancel-btn {
+    margin-top: 20px;
+    background-color: #FF873D;
+    border-color: #FF873D;
+}
+
+#cancel-btn:hover {
+    background-color: #FF6C00;
+    border-color: #FF6C00;
+}
+
+.register-notification{
+    background-color: #FF6C00;
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+    margin-top: 0px;
+    margin-left:600px;
+}
+
+.register-notification img {
+    vertical-align: middle;
+    size: small;
+}
+
+.register-notification h2{
+    text-align: center;
+}
+
+.register-notification h3{
+    text-align: center;
+}
 
 
 
