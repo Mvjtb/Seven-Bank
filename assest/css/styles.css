@@ -229,15 +229,14 @@ a.large-btn:hover {
 }
 
 .register-titles{
-    text-align: center;
     margin-top: 40px;
-    margin-left: 100px;
+    margin-left: 250px;
 }
 
 .register-container {
     text-align: center;
     margin-top: 25px;
-    margin-left: 100px; 
+    margin-left: 180px; 
     width: 400px;  
 }
 
@@ -247,7 +246,7 @@ a.large-btn:hover {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 30px;
     border-radius: 10px;
-    width: 400px;
+    width: 450px;
     margin-top: 3px;
 }
 
@@ -255,11 +254,11 @@ a.large-btn:hover {
     display: block;
     margin-bottom: 2px;
     text-align: center;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .register-form input {
-    width: 60%;
+    width: 70%;
     padding: 8px;
     margin-bottom: 5px;
     border: 1px solid #000000;
@@ -290,26 +289,20 @@ a.large-btn:hover {
     border-color: #FF6C00;
 }
 
-.register-notification{
-    background-color: #FF6C00;
-    padding: 30px;
-    border-radius: 10px;
-    width: 300px;
-    margin-top: 0px;
-    margin-left:600px;
-}
-
-.register-notification img {
-    vertical-align: middle;
-    size: small;
-}
-
-.register-notification h2{
+.register-notification {
+    position: absolute;
+    bottom: 20px;
+    left: 800px;
+    width: 25%;
+    background-color: #FF873D;
+    padding: 65px;
     text-align: center;
 }
 
-.register-notification h3{
-    text-align: center;
+.highlight-text {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    margin: 0;
 }
 
 
