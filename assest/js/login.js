@@ -11,8 +11,12 @@ loginBtn.addEventListener("click", () => {
     if (usernameInput.value === "" || cedulaInput.value === "" || passwordInput.value === "") {
         alert("Por favor, complete los campos para iniciar sesión.");
     } else if (usernameInput.value === "admin" && cedulaInput.value === "admin" && passwordInput.value === "admin") {
+        window.location.href = "mainaccount.html";
         alert("¡Inicio de sesión exitoso!");
     }else{
         alert("Este usuario no se encuentra registrado");
+        
     }
 });
+
+
