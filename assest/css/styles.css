@@ -493,6 +493,27 @@ a.large-btn:hover {
 
 /*ESTILOS DEL REGISTERUSER para el formulario de crear usuario y contrseña*/
 
+.registerUser-background {
+    margin:0;
+    padding:0;
+    background-image: url("../image/fondo2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.registerUser-titles{
+    margin-top: 40px;
+    margin-left: 200px;
+}
+
+.registerUser-container {
+    text-align: center;
+    margin-top: 25px;
+    margin-left: 180px; 
+    width: 400px;  
+}
+
+
 .registerUser-form{
     background-color: rgba(255, 255, 255, 0.8);
     padding: 30px;
