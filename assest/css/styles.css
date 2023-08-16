@@ -8,7 +8,7 @@ body {
 }
 
 /* Estilo para el cuadro de mensaje */
-.message-box {
+#message-box {
     display: none;
     position: fixed;
     bottom: 20px;
@@ -379,6 +379,13 @@ a.large-btn:hover {
 }
 
 
+/* Mostrar las opciones secundarias al hacer hover sobre el botón */
+.horizontal-options:hover .sub-options {
+    display: flex;
+    top: 50px;
+}
+
+
 .horizontal-orange-bar {
     background-color: #FF873D;
     height: 70px;
@@ -388,3 +395,62 @@ a.large-btn:hover {
     left: 0;
 }
 
+/* Estilos para la barra horizontal */
+.horizontal-orange-bar {
+    background-color: #FF873D;
+    height: 70px;
+    width: 78%;
+    position: absolute;
+    top: 180px; 
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Estilos para los botones de opciones horizontales */
+.horizontal-btn {
+    font-size: 24px;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid #FF873D;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;   
+    
+}
+
+.horizontal-btn:hover {
+    background-color: #FF873D;
+    color: white;
+}
+
+/* Estilos para las opciones secundarias */
+.sub-options {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: #e06f28;
+    width: 250px;
+    padding: 25 px;
+    z-index: 1;   
+    border-radius: 5px; 
+    
+}
+
+.sub-options a {
+    color: white; 
+    font-size: 23px; 
+    padding: 8px 0;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.sub-options a:hover {
+    color: #2F3F56;
+}
+
+.horizontal-icon {
+    width: 35px; 
+}

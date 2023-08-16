@@ -22,3 +22,12 @@ logoutButton.addEventListener("click", () => {
     }
 });
 
+// Obtener referencias a los botones y opciones
+const consolidatedButton = document.querySelector(".horizontal-options button");
+const consolidatedOptions = document.getElementById("consolidated-options");
+
+// Agregar evento de clic al botón "Posición Consolidada"
+consolidatedButton.addEventListener("click", () => {
+    consolidatedOptions.classList.toggle("show-options");
+});
+
