@@ -354,11 +354,46 @@ a.large-btn:hover {
     margin-top:-750px;
 }
 
+/* Estilos para los nuevos botones en la barra vertical */
+.vertical-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 35%;
+    transform: translateY(-50%);
+    right: 65px; 
+}
+
+.vertical-btn {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    margin-bottom: 10px;
+    text-align: center; 
+    width: 180px; 
+    margin: 5px auto;
+}
+
+.vertical-btn:hover {
+    background-color: #FF873D;
+    color: white;
+    border-color: white;
+}
+
+
+
+
 /* Estilos para el botón de cerrar sesión */
 .logout-button {
     position: fixed;
     bottom: 20px;
-    right: 50px;
+    right: 65px;
     z-index: 1;
 }
 
@@ -436,7 +471,7 @@ a.large-btn:hover {
     padding: 25 px;
     z-index: 1;   
     border-radius: 5px; 
-    
+    margin-top: 10px;
 }
 
 .sub-options a {
