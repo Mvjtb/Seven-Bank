@@ -47,31 +47,44 @@
         </div>
     </div> 
     <div class="main-content">
-        <h1 class="consultation-title"> Consulta de movimientos </h1>
-        <form class="search-form">
-            <label>
-                <input type="radio" name="search-option" value="last-movements" checked> Últimos movimientos
-            </label>
-            <label>
-                <input type="radio" name="search-option" value="date-range"> Por rango
-            </label>
-            <button type="submit">Buscar</button>
-            <br>
-            <label for="from-date">Desde:</label>
-            <input type="date" id="from-date" name="from-date">
-            <div class="date-container">
-            <label for="to-date">Hasta:</label>
-            <input type="date" id="to-date" name="to-date">
-            </div>
-            
-        </form>
+        <h1 class="consultation-title"> Generar Estado de Cuenta </h1>
+        <div class="center-horizontal">
+        <div class="month-chooser">
+            <label for="month-select">Seleccionar Mes:</label>
+            <select id="month-select" name="month-select">
+                <option value="00">Seleccione</option>
+                <option value="01">Enero</option>
+                <option value="02">Febrero</option>
+                <option value="03">Marzo</option>
+                <option value="04">Abril</option>
+                <option value="05">Maro</option>
+                <option value="06">Junio</option>
+                <option value="07">Julio</option>
+                <option value="08">Agosto</option>
+                <option value="09">Septiembre</option>
+                <option value="10">Octubre</option>
+                <option value="11">Noviembre</option>
+                <option value="12">Diciembre</option>
+                
+            </select>
+        </div>
+        
+        <button class="generate-button">Generar</button>
+        
+        <div class="pdf-icon">
+            <img src="assest/image/pdf.png" alt="Calendario">
+        </div>
+        
+        <div class="download-print-buttons">
+            <button class="download-button">Descargar</button>
+            <button class="print-button">Imprimir</button>
+        </div>
 
-        <div class="search-results">
-            <!-- Espacio para mostrar los resultados de la búsqueda -->
+
         </div>
     </div>
 
     <div id="message-box"></div>   
-    <script src="assest/js/movement.js"></script>
+    <script src="assest/js/accountStatus.js"></script>
 </body>
 </html>

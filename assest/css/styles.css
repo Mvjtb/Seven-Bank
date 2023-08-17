@@ -783,3 +783,69 @@ a.large-btn:hover {
 .group-form-incorrect .form-input{
     border: 3px solid #bb2929;
 }
+
+/*Estilos para accountStatus*/
+/* Estilos para centrar horizontalmente los elementos */
+.center-horizontal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Estilos para el selector de mes */
+.month-chooser {
+    margin-bottom: 20px;
+}
+
+.month-chooser label {
+    font-size: 23px;
+    color: white;
+}
+
+.month-chooser select {
+    font-size: 16px;
+    padding: 5px;
+}
+
+/* Estilos para el botón Generar */
+.generate-button {
+    background-color: #FF873D;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.generate-button:hover {
+    background-color: #2F3F56;
+}
+
+/* Estilos para el icono de PDF */
+.pdf-icon img {
+    width: 80px;
+    margin-top: 10px;
+}
+
+/* Estilos para los botones Descargar e Imprimir */
+.download-button,
+.print-button {
+    background-color: #FF873D;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+    margin-right: 10px; /* Espacio entre los botones */
+}
+
+.download-button:hover,
+.print-button:hover {
+    background-color: #2F3F56;
+}
