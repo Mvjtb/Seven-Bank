@@ -360,7 +360,7 @@ a.large-btn:hover {
     flex-direction: column;
     align-items: center;
     position: absolute;
-    top: 35%;
+    top: 45%;
     transform: translateY(-50%);
     right: 65px; 
 }
@@ -488,4 +488,148 @@ a.large-btn:hover {
 
 .horizontal-icon {
     width: 35px; 
+}
+
+/* Estilos para el elemento "Saldo" en la parte inferior izquierda */
+.balance-text {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    font-size: 70px;
+    color: white;
+}
+
+.user-text1 {
+    position: absolute;
+    bottom: 270px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 23px;
+    color: white;
+    text-align: center;
+}
+
+/* Estilos para html movimientos de cuentas */
+
+.logout-button-sup {
+    position: fixed;
+    top: 20px; 
+    right: 65px;
+    z-index: 1;
+}
+
+#logout-btn-sup {
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #FF873D;
+    border: 2px solid #ffffff;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+#logout-btn-sup:hover {
+    background-color: #2F3F56;
+    border-color: #2F3F56;
+}
+
+/* Estilos para el botón "Menú Principal" y "Cerrar Sesión" en la esquina superior izquierda */
+.menu-p-button {
+    position: absolute;
+    top: 20px;
+    left: 20px; 
+    z-index: 1;
+}
+
+#menu-p-btn {
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: #2F3F56;
+    color: #ffffff;
+    border: 2px solid #2F3F56;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+#menu-p-btn:hover {
+    background-color: #2F3F56;
+    border-color: #ffffff;
+}
+
+.user-icon-white {
+    width: 100px; 
+    height: auto;
+    position: fixed;
+    top: 6%; 
+    right: 300px;
+    z-index: 1;
+}
+
+.divider {
+    width: 2px;
+    height: 50px; 
+    background-color: white; 
+    margin: 10px 10px;
+    display: inline-block;
+    vertical-align: middle;
+    content: "";
+}
+
+.consultation-title {
+    text-align: left;
+    padding-top: 70px; 
+    padding-left: 20px;
+    color: #ffffff;
+    border-bottom: 2px solid #FF873D; 
+}
+
+.consultation-title h1 {
+    color: white;
+    font-size: 30px;
+}
+
+/* Estilos para el formulario y la consulta de movimientos */
+
+.search-form {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.search-form label {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 18px;
+    color: white;
+}
+
+.search-form input[type="radio"] {
+    vertical-align: middle; 
+}
+
+.search-form input[type="date"] {
+    font-size: 16px;
+    padding: 5px;
+}
+
+.search-form button[type="submit"] {
+    background-color: #FF873D;
+    color: white;
+    border: 2px solid #FF873D; 
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s; 
+}
+
+.search-form button[type="submit"]:hover {
+    background-color: #2F3F56;
+    border-color: #2F3F56;
+}
+
+.date-container {
+    display: inline-block;
+    margin-left: 20px;
 }
