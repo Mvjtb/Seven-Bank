@@ -906,3 +906,43 @@ a.large-btn:hover {
     background-color: #2F3F56;
 }
 
+/*Estilos para tdcInquiry*/
+
+.tdc-inquiry-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.tdc-inquiry-section label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: white;
+}
+
+.tdc-inquiry-section select {
+    font-size: 16px;
+    padding: 5px;
+}
+
+.generate-button {
+    background-color: #FF873D;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.generate-button:hover {
+    background-color: #2F3F56;
+}
+
+.tdc-results {
+    margin-top: 20px;
+    /* Estilos para los resultados de la consulta */
+}
+
