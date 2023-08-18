@@ -47,44 +47,22 @@
         </div>
     </div> 
     <div class="main-content">
-        <h1 class="consultation-title"> Generar Estado de Cuenta </h1>
-        <div class="center-horizontal">
-        <div class="month-chooser">
-            <label for="month-select">Seleccionar Mes:</label>
-            <select id="month-select" name="month-select">
-                <option value="00">Seleccione</option>
-                <option value="01">Enero</option>
-                <option value="02">Febrero</option>
-                <option value="03">Marzo</option>
-                <option value="04">Abril</option>
-                <option value="05">Maro</option>
-                <option value="06">Junio</option>
-                <option value="07">Julio</option>
-                <option value="08">Agosto</option>
-                <option value="09">Septiembre</option>
-                <option value="10">Octubre</option>
-                <option value="11">Noviembre</option>
-                <option value="12">Diciembre</option>
-                
+        <h1 class="consultation-title"> Solicitud de tarjeta digital </h1>
+        
+        <div class="select-account">
+            <p>Seleccione un número de cuenta:</p>
+            <select id="account-select" name="account-select">
             </select>
         </div>
         
-        <button class="generate-button">Generar</button>
-        
-        <div class="pdf-icon">
-            <img src="assest/image/pdf.png" alt="Calendario">
-        </div>
-        
-        <div class="download-print-buttons">
-            <button class="download-button">Descargar</button>
-            <button class="print-button">Imprimir</button>
-        </div>
-
-
-        </div>
+        <form class="request-form">
+            <label for="request-reason">Motivo de solicitud:</label>
+            <textarea id="request-reason" name="request-reason" rows="4"></textarea>
+            <button type="submit" class="submit-button">Enviar Solicitud</button>
+        </form>
     </div>
 
     <div id="message-box"></div>   
-    <script src="assest/js/accountStatus.js"></script>
+    <script src="assest/js/cardApplication.js"></script>
 </body>
 </html>
