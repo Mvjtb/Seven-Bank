@@ -1,5 +1,5 @@
-// Obtener referencia al botón de inicio de sesión
-const loginBtn = document.getElementById("login-btn");
+// Obtener referencia al botón de cancelar
+const cancBtn = document.getElementById("form-canc-btn");
 
 // Obtener referencias a los campos de entrada
 const registerUserForm=document.getElementById('registerUserForm');
@@ -90,15 +90,22 @@ registerUserForm.addEventListener('submit', (e) => {
 
 	if(campos.nameUser && campos.password){
 		registerUserForm.reset();
+		window.location.href = "login.html";
+        alert("¡Cuenta creada exitosamente!");
+	} else {
+		document.getElementById('form-message').classList.add('form-message-activo');
+	}
+});
 
-		document.getElementById('form-message-exito').classList.add('form-message-exito-activo');
-		setTimeout(() => {
-			document.getElementById('form-message-exito').classList.remove('form-message-exito-activo');
-		}, 5000);
+/*validacion del boton cancelar*/
 
-		document.querySelectorAll('.group-form-correct').forEach((icono) => {
-			icono.classList.remove('group-form-correct');
-		});
+cancBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+
+	if(campos.nameUser && campos.password){
+		registerUserForm.reset();
+		window.location.href = "register.html";
+		alert("¿Estas seguro de cancelar el proceso?");
 	} else {
 		document.getElementById('form-message').classList.add('form-message-activo');
 	}
