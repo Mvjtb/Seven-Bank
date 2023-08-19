@@ -36,7 +36,7 @@
             <div class="group-form" id="group-password">
                 <label for="password" class="form_label">Contraseña</label>
                 <div class="group-form-input">
-                    <input type="text" class="form-input" id="password" name="password">
+                    <input type="password" class="form-input" id="password" name="password">
                     <i class="form-valid fas fa-times-circle"></i>
                 </div>
                 <p class="form-input-error">La contraseña debe contener minimo 7 caracteres incluyendo mayusculas, minusculas, numeros y un caracter especial</p>
@@ -45,7 +45,7 @@
             <div class="group-form" id="group-cpassword">
                 <label for="cpassword" class="form_label">Confirma tu contraseña</label>
                 <div class="group-form-input">
-                    <input type="text" class="form-input" id="cpassword" name="cpassword">
+                    <input type="password" class="form-input" id="cpassword" name="cpassword">
                     <i class="form-valid fas fa-times-circle"></i>
                 </div>
                 <p class="form-input-error">Ambas contraseñas deben coincidir</p>
@@ -56,13 +56,10 @@
 			</div>
             
             <div class="buttonss">
-                <div class="group-form group-form-btn-crearc">
-                    <button type="submit" class="large-btn" id="form-btn">Crear cuenta</button>
-                    <p class="form-message-exito" id="form-message-exito">¡Cuenta creada exitosamente!</p>
+                <div class="group-form group-form-btn">
+                    <button type="submit" class="large-btn" id="form-btn">Crear cuenta</button> 
+                    <button class="large-btn" id="form-canc-btn">Cancelar</button>
                 </div>
-    
-                <div class="group-form group-form-btn-cancel">
-                    <button type="submit" class="large-btn" id="form-btn">Cancelar</button>
                 </div>
             </div>
         </form>
