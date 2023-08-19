@@ -236,7 +236,7 @@ a.large-btn:hover {
     background-color: #ff6a00b0;
 }
 
-/* Estilos para la pagina de registro y crear cuenta*/
+/* REGISTER Estilos para la pagina de registro y crear cuenta*/
 /*fondo*/
 
 .register-background {
@@ -254,7 +254,7 @@ a.large-btn:hover {
 
 .register-container {
     text-align: center;
-    margin-top: 25px;
+    margin-top: 15px;
     margin-left: 180px; 
     width: 400px;  
 }
@@ -269,19 +269,67 @@ a.large-btn:hover {
     margin-top: 3px;
 }
 
-.register-form label {
+.form1_label {
     display: block;
     margin-bottom: 2px;
-    text-align: center;
+    text-align: left;
     font-size: 20px;
 }
 
-.register-form input {
-    width: 70%;
+.form1-input {
+    width: 100%;
     padding: 8px;
     margin-bottom: 5px;
-    border: 2px solid #000000;
+    border: 1px solid #000000;
     border-radius: 5px;
+}
+
+.group-form1-input {
+	position: relative;
+}
+
+/*estilo del mensaje chiquito para no dejar campos vacios*/
+
+.form1-input-error {
+	font-size: 15px;
+	margin-bottom: 5;
+	display: none;
+    text-align: left;
+}
+
+/*bloquear el mensaje para que aparesca solo cuando se llame*/
+
+.form1-input-error-activo {
+	display: block;
+}
+
+/*dibujito del validar palomita*/
+
+.form1-valid {
+	position: absolute;
+	right: 10px;
+	bottom: 15px;
+	z-index: 100;
+	font-size: 16px;
+	opacity: 0;
+}
+
+/*estilo del mensaje:rellena....*/
+.form1-message {
+    height: 45px;
+	line-height: 45px;
+	background: #f08888;
+	padding: 0 15px;
+	border-radius: 3px;
+	display: none;
+}
+
+.form1-message-activo {
+    display: block;
+}
+
+.form1-message p {
+    margin: 0;
 }
 
 /*botones inferiores de registrar y cancelar*/
@@ -307,6 +355,29 @@ a.large-btn:hover {
     background-color: #FF6C00;
     border-color: #FF6C00;
 }
+
+
+/*estilos para validacion*/
+
+.group-form1-correct .form1-valid{
+    color: #1ed12d;
+    opacity: 1;
+}
+
+.group-form1-correct .form1-input{
+    border: 3px solid #1ed12d;
+}
+
+.group-form1-incorrect .form1-valid{
+    color:#bb2929;
+    opacity: 1;
+}
+
+.group-form1-incorrect .form1-input{
+    border: 3px solid #bb2929;
+}
+
+
 
 .register-notification {
     position: absolute;
