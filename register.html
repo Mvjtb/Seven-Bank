@@ -23,22 +23,72 @@
         <h3>Ingresa los siguientes datos para registrarte</h3>
     </div>
     <div class="register-container">
-        <form class="register-form">
-            <label for="name">Nombres</label><input type="text" id="name" name="name" required>
+        <form action="" class="register-form" id="register-form">
+
+            <div class="group-form1" id="group-name">
+                <label for="name" class="form1_label">Nombres</label>
+                <div class="group-form1-input">
+                    <input type="text" class="form1-input" id="name" name="name" placeholder="Ej: Jose Jesus">
+                    <i class="form1-valid fas fa-times-circle"></i>
+                </div>
+                <p class="form1-input-error">Este campo es obligatorio</p>
+            </div>
             
-            <label for="apellidos">Apellidos</label><input type="text" id="apellidos" name="apellidos" required>
+            <div class="group-form1" id="group-lastname">
+                <label for="lastname" class="form1_label">Apellidos</label>
+                <div class="group-form1-input">
+                    <input type="text" class="form1-input" id="lastname" name="lastname" placeholder="Ej: Jimenez">
+                    <i class="form1-valid fas fa-times-circle"></i>
+                </div>
+                <p class="form1-input-error">Este campo es obligatorio</p>
+            </div>
             
-            <label for="cedula">Cedula</label><input type="text" id="cedula" name="cedula" required>
+            <div class="group-form1" id="group-ident">
+                <label for="ident" class="form1_label">Cedula</label>
+                <div class="group-form1-input">
+                    <input type="text" class="form1-input" id="ident" name="ident" placeholder="Ej 12941538">
+                    <i class="form1-valid fas fa-times-circle"></i>
+                </div>
+                <p class="form1-input-error">Ingresa tu numero de cedula sin punto, sin guiones, sin letras</p>
+            </div>
 
-            <label for="number">Telefono</label><input type="text" id="number" name="number" required>
+            <div class="group-form1" id="group-phone">
+                <label for="phone" class="form1_label">Telefono</label>
+                <div class="group-form1-input">
+                    <input type="text" class="form1-input" id="phone" name="phone" placeholder="04125558775">
+                    <i class="form1-valid fas fa-times-circle"></i>
+                </div>
+                <p class="form1-input-error">Ingresa tu numero de telefono sin guiones</p>
+            </div>
 
-            <label for="country">Pais</label><input type="text" id="country" name="country" required>
+            <div class="group-form1" id="group-mail">
+                <label for="mail" class="form1_label">Correo</label>
+                <div class="group-form1-input">
+                    <input type="text" class="form1-input" id="mail" name="mail" placeholder="ejemplo@gmail.com">
+                    <i class="form1-valid fas fa-times-circle"></i>
+                </div>
+                <p class="form1-input-error">Ingresa tu correo incluyendo @ y .com </p>
+            </div>
+
+            <div class="group-form1" id="group-country">
+                <label for="country" class="form1_label">Pais</label>
+                <div class="group-form1-input">
+                    <input type="text" class="form1-input" id="country" name="country">
+                    <i class="form1-valid fas fa-times-circle"></i>
+                </div>
+                <p class="form1-input-error">Este campo es opcional</p>
+            </div>
             
-            <div class="buttonss">
+            <div class="form1-message" id="form1-message">
+				<p><i class="fas fa-exclamation-triangle"></i>Rellena todos los campos correctamente.</p>
+			</div>
 
-                <button class="large-btn" id="register-btn"> <u>Registrarme</u> </button>
+            <div class="buttons-down">
 
-                <button class="large-btn" id="cancel-btn"> <u>Cancelar</u> </button>
+                <div class="group-form1 group-form1-btn">
+                    <button type="submit" class="large-btn" id="register-btn">Registrarme</button>
+                    <button class="large-btn" id="cancel-btn">Cancelar</button>
+                </div>
 
             </div>
             <div class="register-notification">
