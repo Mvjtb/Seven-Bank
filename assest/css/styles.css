@@ -708,6 +708,7 @@ a.large-btn:hover {
 }
 
 
+/*estilos para registerUser*/
 /*ESTILOS DEL REGISTERUSER para el formulario de crear usuario y contrseña*/
 
 .registerUser-background {
@@ -729,7 +730,6 @@ a.large-btn:hover {
     margin-left: 180px; 
     width: 400px;  
 }
-
 
 .registerUser-form{
     background-color: rgba(255, 255, 255, 0.8);
@@ -754,7 +754,7 @@ a.large-btn:hover {
     width: 100%;
     padding: 10px;
     margin-bottom: 0;
-    border: 2px solid #000000;
+    border: 1px solid #000000;
     border-radius: 5px;
 }
 
@@ -777,7 +777,7 @@ a.large-btn:hover {
 	display: block;
 }
 
-/*dibujito del validar palomita*/
+/*validar*/
 
 .form-valid {
 	position: absolute;
@@ -819,12 +819,15 @@ a.large-btn:hover {
     border-color: #FF6C00;
 }
 
-.group-form-btn.crearc {
-    align-items: left;
+#form-canc-btn {
+    margin-top: 20px;
+    background-color: #FF873D;
+    border-color: #FF873D;
 }
 
-.group-form-btn-cancel {
-    align-items: right;
+#form-canc-btn:hover {
+    background-color: #FF6C00;
+    border-color: #FF6C00;
 }
 
 /*mensaje exitosamente*/
@@ -854,6 +857,7 @@ a.large-btn:hover {
 .group-form-incorrect .form-input{
     border: 3px solid #bb2929;
 }
+
 
 /*Estilos para accountStatus*/
 
