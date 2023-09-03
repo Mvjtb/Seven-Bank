@@ -1173,3 +1173,40 @@ a.large-btn:hover {
     transition: background-color 0.3s;
     margin-top: 20px;
 }
+
+/* Estilos para el contenedor de los botones */
+.service-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+    grid-gap: 20px; /* Espacio entre los botones */
+}
+
+/* Estilos para cada botón de búsqueda */
+.service-button {
+    background-color: #FF873D;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 50; /* Ancho al 100% para ocupar toda la columna */
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos para el efecto hover */
+.service-button:hover {
+    background-color: #2F3F56;
+}
+
+/* Estilos para las imágenes con la clase "image-service" */
+.image-service {
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+

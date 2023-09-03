@@ -92,4 +92,38 @@
 }
 
 
+/* Estilos para las opciones de pago */
+.service-option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.service-option img {
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+}
+
+/* Estilos para los resultados de los pagos */
+.payment-results {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    min-height: 100px; /* Ajusta la altura mínima según tus necesidades */
+}
+
+.payment-results p {
+    font-size: 18px;
+    color: #333;
+}
+
+
 
