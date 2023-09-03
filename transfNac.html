@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seven Bank - Transferencia</title>
+    <link rel="stylesheet" href="assest/css/styles.css">
+    <link rel="stylesheet" href="assest/css/responsive.css">
+</head>
+<body style="background-image: none;" class="main-account-background custom-main-body">
+    <div class="top-bar">
+        <div class="title">
+            <img class="icon" src="assest/image/globoCuadriculas.png" alt="Icono de Seven Bank">Seven <span class="highlight">Bank</span>
+        </div>
+        <div class="logout-menu-container">
+            <img class="user-icon-white" src="assest/image/iconoUsuarioBlanco.png" alt="Icono Usuario">
+            <button class="large-btn-sup" id="menu-p-btn">Menú <br> Principal</button>
+            <div class="divider"></div>
+            <button class="large-btn-sup" id="logout-btn-sup">Cerrar <br> sesión</button>
+        </div>
+    </div>    
+    <div class="horizontal-orange-bar">
+        <!-- Barra horizontal con botones y opciones -->
+        <div class="horizontal-options">
+            <button class="horizontal-btn" id="consolidated-options"><u> Posición Consolidada </u> <img class="horizontal-icon" src="assest/image/apuntadorAbajo.png" alt="Icono de boton main"> </button>
+            <div class="sub-options">
+                <a href="movement.html">  Movimiento</a>
+                <a href="accountStatus.html">  Estado de Cuenta</a>
+            </div>
+        </div>
+        
+        <div class="horizontal-options">
+            <button class="horizontal-btn" id="consolidated-options"> <u> Transacciones </u> <img class="horizontal-icon" src="assest/image/apuntadorAbajo.png" alt="Icono de boton main"> </button>
+            <div class="sub-options">
+                <a href="transfers1.html">  Transferencia</a>
+                <a href="#">  Pagos de Servicios</a>
+            </div>
+        </div>
+        
+        <div class="horizontal-options">
+            <button class="horizontal-btn" id="consolidated-options"><u> Tarjeta </u> <img class="horizontal-icon" src="assest/image/apuntadorAbajo.png" alt="Icono de boton main"> </button>
+            <div class="sub-options">
+                <a href="cardApplication.html">  Solicitud</a>
+                <a href="tdcInquiry.html">  Consulta de Tarjeta</a>
+            </div>
+        </div>
+    </div> 
+    <div class="main-content">
+        <h1 class="consultation-title"> Transferencia Nacional </h1>
+        <h3>Ingrese los datos del beneficiario</h3>
+        
+        <form action="" class="form-transfBen" id="form-transfBen">
+
+            <label for="name" class="formlabel">Nombre</label>
+            <input type="text" class="forminput" id="name" name="name" required>
+
+            <label for="ci" class="formlabel">Cedula</label>
+            <input type="text" class="forminput" id="ci" name="ci" required>
+            
+            <label for="nrocta" class="formlabel">Numero de cuenta</label>
+            <input type="text" class="forminput" id="nrocta" name="nrocta" required>
+            
+            <label for="monto" class="formlabel">Monto</label>
+            <input type="text" class="forminput" id="monto" name="monto" required>
+            
+            <button class="conti-btn" id="conti-btn">Continuar</button>
+            <button class="cancelar-btn" id="cancelar-btn">Cancelar</button>
+
+        </form>
+
+    </div>
+
+    <div id="message-box"></div>   
+    <script src="assest/js/transfNac.js"></script>
+</body>
+</html>
