@@ -47,33 +47,43 @@
         </div>
     </div> 
     <div class="main-content">
-        <h1 class="consultation-title"> Pago de Servicios </h1>
-        <!-- Botones de Pago de Servicios -->
-    <div class="service-options">
-        <div class="service-button" id="telefonia-button">
-            <img class="image-service" src="assest/image/iconFlecha.png" alt="Icono Flecha">
-            Telefonía móvil y fija
-            <img class="image-service" src="assest/image/iconoTelefoniaMovilFija.png" alt="Icono Telefonía móvil y fija">
-        </div>        
-        <div class="service-button" id="hidrolara-button">
-            <img class="image-service" src="assest/image/iconFlecha.png" alt="Icono Flecha">
-            Hidrolara
-            <img class="image-service" src="assest/image/iconoHidrolara.png" alt="Icono Hidrolara">
+        <h1 class="consultation-title"> Pago de servicios / Impuestos </h1>
+        
+        <div class="phone-service-options-container">
+            <div class="phone-service-options">
+                <label for="Seniat">
+                    <input type="radio" id="seniat" name="service" value="Seniat">
+                    <img src="assest/image/imageSeniat.png" alt="Seniat">
+                </label>
+                <label for="IVSS">
+                    <input type="radio" id="IVSS" name="service" value="IVSS">
+                    <img src="assest/image/imageIvss.png" alt="IVSS">
+                </label>                
+            </div>
+    
         </div>
-        <div class="service-button" id="corpoelec-button">
-            <img class="image-service" src="assest/image/iconFlecha.png" alt="Icono Flecha">
-            Corpoelec
-            <img class="image-service" src="assest/image/iconoCorpoelec.png" alt="Icono Corpoelec">
-        </div>
-        <div class="service-button" id="tax-button">
-            <img class="image-service" src="assest/image/iconFlecha.png" alt="Icono Flecha">
-            Impuestos 
-            <img class="image-service" src="assest/image/iconoImpuestos.png" alt="Icono Impuestos">
-        </div>
-    </div>
+    
+        <form class="payment-form clearfix">
+            <div>
+                <label for="numero-telefono">Código:</label>
+                <input type="text" id="numero-telefono" name="numero-telefono">
+            </div>
+            <div>
+                <label for="monto-pago">Monto a Pagar:</label>
+                <input type="text" id="monto-pago" name="monto-pago">
+            </div>
+            <div>
+                <button type="submit" class="accept-button">Aceptar</button>
+                <button type="button" class="cancel-button">Cancelar</button>
+            </div>
+        </form>
+        
+        
+    
+
 
 </div>
 
-    <script src="assest/js/servicePay.js"></script>
+    <script src="assest/js/telephoneServicePay.js"></script>
 </body>
 </html>

@@ -47,33 +47,48 @@
         </div>
     </div> 
     <div class="main-content">
-        <h1 class="consultation-title"> Pago de Servicios </h1>
-        <!-- Botones de Pago de Servicios -->
-    <div class="service-options">
-        <div class="service-button" id="telefonia-button">
-            <img class="image-service" src="assest/image/iconFlecha.png" alt="Icono Flecha">
-            Telefonía móvil y fija
-            <img class="image-service" src="assest/image/iconoTelefoniaMovilFija.png" alt="Icono Telefonía móvil y fija">
-        </div>        
-        <div class="service-button" id="hidrolara-button">
-            <img class="image-service" src="assest/image/iconFlecha.png" alt="Icono Flecha">
-            Hidrolara
-            <img class="image-service" src="assest/image/iconoHidrolara.png" alt="Icono Hidrolara">
+        <h1 class="consultation-title"> Pago de servicios / Corpoelec </h1>
+        
+        <!-- Formulario de Pago -->
+    <form class="payment-form" id="corpoelec-payment-form">
+        <div>
+            <label for="numero-contrato">Número de Contrato:</label>
+            <input type="text" id="numero-contrato" name="numero-contrato">
         </div>
-        <div class="service-button" id="corpoelec-button">
-            <img class="image-service" src="assest/image/iconFlecha.png" alt="Icono Flecha">
-            Corpoelec
-            <img class="image-service" src="assest/image/iconoCorpoelec.png" alt="Icono Corpoelec">
+        <div>
+            <label for="periodo-cancelar">Periodo a Cancelar:</label>
+            <select id="periodo-cancelar" name="periodo-cancelar">
+                <option value="enero">Enero</option>
+                <option value="febrero">Febrero</option>
+                <option value="marzo">Marzo</option>
+                <option value="abril">Abril</option>
+                <option value="mayo">Mayo</option>
+                <option value="junio">Junio</option>
+                <option value="julio">Julio</option>
+                <option value="agosto">Agosto</option>
+                <option value="septiembre">Septiembre</option>
+                <option value="octubre">Octubre</option>
+                <option value="noviembre">Noviembre</option>
+                <option value="diciembre">Diciembre</option>
+                
+            </select>
         </div>
-        <div class="service-button" id="tax-button">
-            <img class="image-service" src="assest/image/iconFlecha.png" alt="Icono Flecha">
-            Impuestos 
-            <img class="image-service" src="assest/image/iconoImpuestos.png" alt="Icono Impuestos">
+        <div>
+            <label for="monto-factura">Monto de Factura:</label>
+            <input type="text" id="monto-factura" name="monto-factura">
         </div>
-    </div>
+        <div>
+            <button type="submit" class="accept-button">Aceptar</button>
+            <button type="button" class="cancel-button">Cancelar</button>
+        </div>
+    </form>
 
+    <div class="corpoelec-image-container">
+        <img src="assest/image/imgCorpoelec.png" alt="corpoelec">
+    </div>    
+        
 </div>
 
-    <script src="assest/js/servicePay.js"></script>
+    <script src="assest/js/corpoelecServicePay.js"></script>
 </body>
 </html>

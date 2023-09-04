@@ -1412,3 +1412,15 @@ a.large-btn:hover {
     max-width: 30%;
     height: auto; 
 }
+
+.corpoelec-image-container {
+    float: right; 
+    margin-left: 20px; 
+    text-align: center; 
+    margin-top: -18%;
+}
+
+.corpoelec-image-container img {
+    max-width: 30%;
+    height: auto; 
+}
