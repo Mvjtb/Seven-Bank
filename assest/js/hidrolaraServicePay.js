@@ -42,20 +42,11 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-// Obtener referencia al botón "Telefonía móvil y fija"
-const telefoniaButton = document.getElementById("telefonia-button");
+// Obtener referencia al botón "Cancelar"
+const cancelButton = document.querySelector(".cancel-button");
 
-// Agregar evento de clic al botón "Telefonía móvil y fija"
-telefoniaButton.addEventListener("click", () => {
-    // Redirigir a la página telephoneServicePay.html
-    window.location.href = "telephoneServicePay.html";
-});
-
-// Obtener referencia al botón "hidrolara"
-const hidrolaraButton = document.getElementById("hidrolara-button");
-
-// Agregar evento de clic al botón "hidrolara"
-hidrolaraButton.addEventListener("click", () => {
-    // Redirigir a la página hidrolaraServicePay.html
-    window.location.href = "hidrolaraServicePay.html";
+// Agregar evento de clic al botón "Cancelar"
+cancelButton.addEventListener("click", () => {
+    // Redirigir a la página servicePay.html
+    window.location.href = "servicePay.html";
 });
