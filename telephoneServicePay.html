@@ -47,33 +47,54 @@
         </div>
     </div> 
     <div class="main-content">
-        <h1 class="consultation-title"> Pago de Servicios </h1>
-        <!-- Botones de Pago de Servicios -->
-    <div class="service-options">
-        <div class="service-button" id="telefonia-button">
-            <img class="image-service" src="assest/image/iconFlecha.png" alt="Icono Flecha">
-            Telefonía móvil y fija
-            <img class="image-service" src="assest/image/iconoTelefoniaMovilFija.png" alt="Icono Telefonía móvil y fija">
-        </div>        
-        <div class="service-button">
-            <img class="image-service" src="assest/image/iconFlecha.png" alt="Icono Flecha">
-            Hidrolara
-            <img class="image-service" src="assest/image/iconoHidrolara.png" alt="Icono Hidrolara">
+        <h1 class="consultation-title"> Pago de servicios / Telefonía móvil y fija </h1>
+        
+        <div class="phone-service-options-container">
+            <div class="phone-service-options">
+                <h2>Prepago</h2>
+                <label for="movistar">
+                    <input type="radio" id="movistar" name="service" value="Movistar">
+                    <img src="assest/image/movistar.jpg" alt="Movistar">
+                </label>
+                <label for="movilnet">
+                    <input type="radio" id="movilnet" name="service" value="Movilnet">
+                    <img src="assest/image/movilnet.png" alt="Movilnet">
+                </label>
+                <label for="digitel">
+                    <input type="radio" id="digitel" name="service" value="Digitel">
+                    <img src="assest/image/digitel.jpg" alt="Digitel">
+                </label>
+            </div>
+            <div class="phone-service-options">
+                <h2>Pospago</h2>
+                <label for="cantv">
+                    <input type="radio" id="cantv" name="service" value="Cantv">
+                    <img src="assest/image/cantv.png" alt="Cantv">
+                </label>
+            </div>
         </div>
-        <div class="service-button">
-            <img class="image-service" src="assest/image/iconFlecha.png" alt="Icono Flecha">
-            Corpoelec
-            <img class="image-service" src="assest/image/iconoCorpoelec.png" alt="Icono Corpoelec">
-        </div>
-        <div class="service-button">
-            <img class="image-service" src="assest/image/iconFlecha.png" alt="Icono Flecha">
-            Impuestos 
-            <img class="image-service" src="assest/image/iconoImpuestos.png" alt="Icono Impuestos">
-        </div>
-    </div>
+    
+        <form class="payment-form clearfix">
+            <div>
+                <label for="numero-telefono">Número de Teléfono:</label>
+                <input type="text" id="numero-telefono" name="numero-telefono">
+            </div>
+            <div>
+                <label for="monto-pago">Monto a Pagar:</label>
+                <input type="text" id="monto-pago" name="monto-pago">
+            </div>
+            <div>
+                <button type="submit" class="accept-button">Aceptar</button>
+                <button type="button" class="cancel-button">Cancelar</button>
+            </div>
+        </form>
+        
+        
+    
+
 
 </div>
 
-    <script src="assest/js/servicePay.js"></script>
+    <script src="assest/js/telephoneServicePay.js"></script>
 </body>
 </html>
