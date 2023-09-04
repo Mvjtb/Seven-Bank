@@ -1031,7 +1031,7 @@ a.large-btn:hover {
     padding: 10px 20px;
     background-color: #ff873d6e;
     color: white; /* Cambia el color del texto a blanco */ 
-    size: 10px;
+    font-size: 23px;
     border: none;
     border-radius: 5px;
     margin-top: 10px;
@@ -1047,20 +1047,20 @@ a.large-btn:hover {
 
 .main-content h3{
     margin-top: 20px;
-    margin-left: 150px;
+    margin-left: 270px;
     color: white
 }
 
 /*formulario TRANSF beneficiario*/
 
 .form-transfBen{
-    background-color: #747f91;
+    background-color: #ff873d6e;
     text-align: center;
     padding: 30px;
     border-radius: 10px;
-    width: 450px;
+    width: 470px;
     margin-top: 3px;
-    margin-left: 50px;
+    margin-left: 150px;
 }
 
 .formlabel {
@@ -1121,7 +1121,7 @@ a.large-btn:hover {
     border-radius: 10px;
     width: 450px;
     margin-top: 3px;
-    margin-left: 50px;
+    margin-left: 150px;
 }
 
 
@@ -1172,6 +1172,51 @@ a.large-btn:hover {
     cursor: pointer;
     transition: background-color 0.3s;
     margin-top: 20px;
+}
+
+/*TRANSF NAC REALIZADA EXITOSAMENTE*/
+
+.group-comp {
+    background-color: #ff873d4d;
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    width: 500px;
+    margin: center;
+    margin-left: 150px;
+    margin-top: 10px;
+}
+
+.group-comp p {
+    margin-top: 10px;
+    color: white;
+    font-size: 25px;
+}
+
+/* Estilos para el icono de PDF */
+.pdf-iicon img {
+    width: 80px;
+    margin-top: 2px;
+}
+
+.save-btn,
+.regist-btn {
+    background-color: #FF873D;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+    margin-right: 10px; 
+}
+
+.save-btn:hover,
+.regist-btn:hover {
+    background-color: #FF6C00;
+    border-color: #FF6C00;
 }
 
 /* Estilos para el contenedor de los botones */
