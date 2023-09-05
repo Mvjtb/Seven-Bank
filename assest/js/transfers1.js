@@ -10,7 +10,7 @@ function showMessage(message) {
 }
 
 // Obtener referencia al botón "Cerrar sesión"
-const logoutButton = document.getElementById("logout-btn");
+const logoutButton = document.getElementById("logout-btn-sup");
 
 // Agregar evento de clic al botón "Cerrar sesión"
 logoutButton.addEventListener("click", () => {
