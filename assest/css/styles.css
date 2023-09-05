@@ -1424,3 +1424,192 @@ a.large-btn:hover {
     max-width: 30%;
     height: auto; 
 }
+
+/*estilos de crear clave especial*/
+
+.group-mostrarc p {
+    font-size: 25px;
+}
+
+/*cuadrito donde se va a mostrar reporte del nro de cuenta*/
+
+.rectangle-cta-icon {
+    background-color: rgb(252, 219, 219);
+    border-radius: 20px #000000;
+    padding: 20px 30px;
+    width: 330px;
+
+}
+
+/*botones de crear clave e iniciar sesion*/
+
+#ckey-btn {
+    margin-top: 30px;
+    background-color: #FF873D;
+    border-color: #FF873D;
+}
+
+#ckey-btn:hover {
+    background-color: #FF6C00;
+    border-color: #FF6C00;
+}
+
+#logiin-btn {
+    margin-top: 20px;
+    background-color: #FF873D;
+    border-color: #FF873D;
+}
+
+#logiin-btn:hover {
+    background-color: #FF6C00;
+    border-color: #FF6C00;
+}
+
+/*ESTILOS DEL REGISTERKEY1*/
+
+.registerKey-background {
+    margin:0;
+    padding:0;
+    background-image: url("../image/fondo2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.registerkey-titles{
+    margin-top: 40px;
+    margin-left: 200px;
+}
+
+.registerkey-container {
+    text-align: center;
+    margin-top: 25px;
+    margin-left: 180px; 
+    width: 400px;  
+}
+
+.registerKeyForm{
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    width: 430px;
+    margin-top: 2px;
+}
+
+/*estilo de la etiqueta*/
+
+.formk_label {
+    display: block;
+    margin-bottom: 6px;
+    text-align: center;
+    font-size: 20px;
+}
+
+/*estilos de las cajitas input*/
+
+.formk-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 0;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+.group-formk-input {
+	position: relative;
+}
+
+/*estilo del mensaje de error y condiciones como debe crear clave*/
+
+.formk-input-error {
+	font-size: 12px;
+	margin-bottom: 2;
+	display: none;
+    text-align: left;
+}
+
+/*bloquear el mensaje para que aparesca solo cuando se llame*/
+
+.formk-input-error-activo {
+	display: block;
+}
+
+/*validar*/
+
+.formk-valid {
+	position: absolute;
+	right: 10px;
+	bottom: 15px;
+	z-index: 100;
+	font-size: 16px;
+	opacity: 0;
+}
+
+/*estilo del mensaje:rellena....*/
+.formk-message {
+    height: 45px;
+	line-height: 45px;
+	background: #948b8b;
+	padding: 0 15px;
+	border-radius: 3px;
+	display: none;
+}
+
+.formk-message-activo {
+    display: block;
+}
+
+.formk-message p {
+    margin: 0;
+}
+
+/*estilo botones de GUARDAR y cancelar*/
+
+#save-btn {
+    margin-top: 20px;
+    background-color: #FF873D;
+    border-color: #FF873D;
+}
+
+#save-btn:hover {
+    background-color: #FF6C00;
+    border-color: #FF6C00;
+}
+
+#cance-btn {
+    margin-top: 20px;
+    background-color: #FF873D;
+    border-color: #FF873D;
+}
+
+#cance-btn:hover {
+    background-color: #FF6C00;
+    border-color: #FF6C00;
+}
+
+/*mensaje exitosamente*/
+
+.formk-message-exito {
+    font-size: 14px;
+	color: #119200;
+	display: none;
+}
+
+.formk-message-exito-activo {
+    display: block;
+}
+
+/*estilos para validacion*/
+
+.group-formk-correct .form-valid{
+    color: #1ed12d;
+    opacity: 1;
+}
+
+.group-formk-incorrect .form-valid{
+    color:#bb2929;
+    opacity: 1;
+}
+
+.group-formk-incorrect .form-input{
+    border: 3px solid #bb2929;
+}
