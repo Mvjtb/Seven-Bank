@@ -104,7 +104,7 @@ cancBtn.addEventListener('click', (e) => {
 
 	if(campos.nameUser && campos.password){
 		registerUserForm.reset();
-		window.location.href = "register.html";
+		window.location.href = "registerkey.html";
 		alert("¿Estas seguro de cancelar el proceso?");
 	} else {
 		document.getElementById('form-message').classList.add('form-message-activo');
