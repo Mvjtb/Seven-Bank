@@ -42,22 +42,13 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-//referencia al formulario
-const formclaves = document.getElementById("formclaves");
+document.addEventListener("DOMContentLoaded", function() {
+    // Obtén una referencia al botón de "confirmar"
+    var confBtn = document.getElementById("conf-btn");
 
-//obtener referencia al boton confirmar 
-const confBtn = document.getElementById("conf-btn");
-
-//obtener referencia de la cajita del input
-const claveInput = document.getElementById("clave");
-
-confBtn.addEventListener("click", () => {
-    //aqui debe ir un if para validar que la clave especial se encuentre en la base de datos
-	if (claveInput.value === "") {
-        document.getElementById('formclave-message').classList.add('formclave-message-activo');
-    } else {
-        formclaves.reset();
+    // Agrega un evento de clic al botón
+    confBtn.addEventListener("click", function() {
+        // Redirige a transferencia exitosa.html!!
         window.location.href = "transfsuccess.html";
-        alert("Aceptar");
-    }
+    });
 });
