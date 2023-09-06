@@ -2,11 +2,15 @@
 
 /* Estilos para la versión responsive */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 414px) {
+
+    /* Estilos para la versión responsive pra index.html */
+
     .top-bar {
         flex-direction: column;
         align-items: center;
         padding: 15px;
+    
     }
 
     body {
@@ -14,17 +18,18 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+        
         }
 
     .left-image {
         width: 150px; 
-        top: 350px; 
+        top: 360px; 
         left: 25px;
     }
     
     .right-image {
         width: 150px; 
-        top: 350px; 
+        top: 360px; 
         right: 25px;
     }
 
@@ -71,59 +76,61 @@
     }
 
     .bottom-text {
-        margin-top: 10px;
+        margin-top: 15px;
         text-align: center;
     }
 
     .highlight-text {
-        width: 60%;
-        margin: 8px auto;
-        font-size: 20px;
+        width: 100%;
+        margin: 1px auto;
+        font-size: 12px;
     }
 
-    /* Estilos responsive para la página de inicio de sesión */
+    /* Ajustes para la versión responsive de login.html */
+
+    .login-container {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    /* Ajusta el tamaño del título */
     .login-container h2 {
         font-size: 24px;
     }
-    
-    .login-form {
-        max-width: 300px;
+
+    /* Ajusta el tamaño de fuente de las etiquetas "Usuario," "Cedula/DNI," y "Contraseña" */
+    .login-container label {
+        font-size: 10px;
     }
+
+    /* Ajusta el tamaño de fuente y el espacio del enlace "¿Olvidaste tu contraseña?" */
+    .login-container p {
+        font-size: 10px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        margin-left: 0%;
+    }
+
+    .login-container  {
+        font-size: 10px;
+        margin-top: 8px;
+        margin-left: 0px;
+    }
+
+    .login-background {
+        background-image: url("../image/fondo2.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        max-width: 414px;
+        
+    }
+    .login-form input {
+        width: 70%;
+        align-items: left;
+    }
+
+
+
+
 }
-
-
-/* Estilos para las opciones de pago */
-.service-option {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 10px;
-    padding: 10px;
-    background-color: #f0f0f0;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-.service-option img {
-    width: 20px;
-    height: 20px;
-    margin: 0 10px;
-}
-
-/* Estilos para los resultados de los pagos */
-.payment-results {
-    margin-top: 20px;
-    padding: 20px;
-    background-color: #f0f0f0;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    min-height: 100px; /* Ajusta la altura mínima según tus necesidades */
-}
-
-.payment-results p {
-    font-size: 18px;
-    color: #333;
-}
-
-
-
